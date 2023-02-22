@@ -7,9 +7,9 @@ We're not responsible for bricked devices, missing recovery partitions, dead mic
 ![App Version](https://img.shields.io/badge/Version-1.2.2-brightgreen)
 ![Requirement](https://img.shields.io/badge/Requirement-Android%2010-orange)  
 
-## [Websites](https://kuatodev.github.io/releases)
+# [⬇️DOWNLOAD](https://kuatodev.github.io/releases)
 
-## Projec Status
+## Project Status
 
 Most of android devices works, but some cases may do not work. read [requirements](https://github.com/KuatoDev/My-Disk-Health#requirements).
 
