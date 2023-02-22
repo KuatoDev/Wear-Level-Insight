@@ -1,5 +1,3 @@
-# My Disk Health
-
 ## ⚠️ **DISCLAIMER**
 
 We're not responsible for bricked devices, missing recovery partitions, dead microSD cards, dead cats or dogs, nuclear wars or you getting fired because of this apps. 
