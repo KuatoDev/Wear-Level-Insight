@@ -16,7 +16,8 @@ Most of android devices works, but some cases may do not work. read [requirement
 ## Translations
 - [x] Default Translation ```English```
 - [x] Indonesian
-Pull request to improve translations
+
+```Pull request to contribute in translation or improve translations```
 
 #### Compatible Storage Variant
 - [x] UFS 1.0 up to 4.0 ```depends on OEM kernel if you using this apps on OEM ROM's```
