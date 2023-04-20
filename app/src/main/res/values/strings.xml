@@ -1,24 +1,13 @@
 <resources>
-  <string name="app_name">My Disk Health</string>
-  <string name="app_subtitle">Version %s</string>
+  <string name="app_name">Wear Level Insight</string>
   <string name="error_title">An unexpected error has occurred.\nWe apologize for the inconvenience.</string>
   <string name="unavailable">N/A</string>
-  <string name="error">Error</string>
-  <string name="storage_type">Storage Type: %s</string>
-  <string name="hexadecimal">Hexadecimal Value: %s</string>
-  <string name="node">Kernel Nodes: %s</string>
-  <string name="write_speed">I/O Disk Speed Benchmark: %s</string>
-  <string name="health_title">Storage Health Estimation</string>
   <string name="internal">Internal Storage</string>
-  <string name="total_storage">Total Usable: %s</string>
-  <string name="free_storage">Free Storage: %s</string>
-  <string name="used_storage">Used Storage: %s</string>
+  <string name="total_storage">Total : %s</string>
+  <string name="free_storage">Free : %s</string>
+  <string name="used_storage">Used : %s</string>
   <string name="percent">%</string>
-  <string name="gigs">GB</string>
-  <string name="youtube">YouTube</string>
-  <string name="paypal">Donate</string>
-  <string name="sdcard">External Storage: %s</string>
-  <string name="telegram">Update</string>
+  <string name="sdcard_name">Mount : %s</string>
   <string name="instagram">Instagram</string>
   <string name="disclaimer_title">Disclaimer</string>
   <string name="disclaimer">The storage in your device has a specified lifetime set by the manufacturer. This application is designed to check the lifespan of your storage. All data shown in this app is based on data dumps from your device. If there is any inaccuracy in the displayed data, you can try changing the kernel on your device.</string>
@@ -28,26 +17,56 @@
   <string name="not_agree">I do not agree</string>
   <string name="need_root_message">Root access is required. Please root your device to use this app.</string>
   <string name="restart">Restart App</string>
-  <string name="detail">Check Details</string>
+  <string name="detail">Details</string>
   <string name="crash_desc">Crash Logo</string>
   <string name="dialog_logo_desc">Dialog Logo</string>
   <string name="exit_message">Do you want to exit the app?</string>
   <string name="exit">Exit</string>
   <string name="no">No</string>
   <string name="yes">Yes</string>
-  <string name="get_msg">Getting messages. Please wait a moment...</string>
-  <string name="mod_msg">Modification detected. Please use the original My Disk Health app.</string>
+  <string name="click_info">Click this card for more informations...</string>
+  <string name="get_msg">Please wait a moment...</string>
+  <string name="mod_msg">Modification detected. \nPlease use the original Wear Level Insight</string>
   <string-array name="msg_array">
     <item>Did you know that maintaining sufficient free storage can help prevent a decrease in disk health?</item>
     <item>Did you know that storing large files on your device\'s internal storage can contribute to a decrease in disk health?</item>
     <item>Did you know that deleting large files can potentially have a negative impact on disk health?</item>
-    <item>@string/disclaimer</item>
     <item>Did you know that regularly deleting large files can help prevent a decrease in disk health?</item>
   </string-array>
   <string name="ufs_hint">UFS (Universal Flash Storage) Lifetime A and UFS Lifetime B are two parameters used to measure the lifespan or longevity of flash storage media in devices that use UFS technology, such as smartphones and tablets. \n\nUFS Lifetime A refers to the amount of data that can be written to the storage media before a permanent failure or damage occurs. This parameter can be considered as a measure of how many times the flash storage media can be overwritten or rewritten before an irreparable damage occurs. \n\nMeanwhile, UFS Lifetime B refers to the amount of time or duration of usage of the storage media before a permanent failure or damage occurs. This parameter can be considered as a measure of how long the flash storage media can last before an irreparable damage occurs. \n\nBoth parameters are important measures for devices that use UFS technology as they determine how long the flash storage media can last before it needs to be replaced or repaired. The higher the value of UFS Lifetime A and UFS Lifetime B, the better the quality of the flash storage media.</string>
+  <string name="ufs_hint_short">UFS Lifetime A and B are key parameters for measuring flash storage lifespan in UFS devices. Lifetime A measures data limit before damage, and Lifetime B measures duration of use before damage. Higher values mean better quality and determine when storage lifetime ends.</string>
   <string name="emmc_hint">eMMC (embedded MultiMediaCard) is a type of non-volatile storage commonly used in smartphones, tablets, and other portable devices. eMMC storage can use different types of NAND flash memory, including SLC (single-level cell), MLC (multi-level cell), and TLC (triple-level cell).\n\nMLC (multi-level cell) is a type of NAND flash memory that stores multiple bits of data per cell, typically two or more. MLC NAND flash is cheaper to produce than SLC (single-level cell) NAND flash, which stores only one bit per cell. However, MLC NAND flash has a lower endurance than SLC NAND flash, meaning it can only be written to a limited number of times before it wears out.\n\neMMC storage that uses MLC NAND flash typically has two types of lifetime ratings: lifetime A and lifetime B. \n\nLifetime A is the minimum guaranteed endurance of the eMMC device, while lifetime B is the typical endurance that the device is expected to achieve under normal operating conditions.\n\nThe endurance of an eMMC device depends on many factors, including the type of NAND flash memory used, the controller and firmware used in the device, and the usage pattern of the device. It\'s important to note that the lifetime ratings provided by the manufacturer are only estimates, and actual endurance may vary depending on the specific use case.</string>
+  <string name="emmc_hint_short">eMMC is non-volatile storage in portable devices that can use different types of NAND flash memory: SLC, MLC, and TLC. MLC is cheaper than SLC, but has lower endurance. eMMC with MLC has two lifetime ratings: lifetime A and lifetime B. Actual endurance depends on many factors, so manufacturer estimates may vary.</string>
   <string name="io_title">I/O Speed Benchmark</string>
-  <string name="wearlevel">Storage wear estimate</string>
-  <string name="lifecycle">Storage health estimate</string>
+  <string name="wearlevel">Wear estimate lifetime</string>
+  <string name="lifecycle">Cycle estimate lifetime</string>
   <string name="run_bench">Run I/O Bench -></string>
+  <string name="storage_info">Storage Informations</string>
+  <string name="download">DOWNLOAD HERE</string>
+  <string name="device">Device Model : %s</string>
+  <string name="processor">Processors : %s</string>
+  <string name="memory">Memory Variant : %s</string>
+  <string name="storage_variant">Storage Variant : %s</string>
+  <string name="graphic">Graphics : %s</string>
+  <string name="powerprofile">Power Profile : %s mA/h</string>
+  <string name="batterycapacity">Battery Capacity : %s mA/h</string>
+  <string name="key_about">About</string>
+  <string name="key_credits">Credits</string>
+  <string name="key_channel">KuatoDev Channel</string>
+  <string name="key_group">GreenForce Official Group</string>
+  <string name="key_donate">Donate</string>
+  <string name="key_instagram">Instagram</string>
+  <string name="key_youtube">Youtube</string>
+  <string name="donate">Buy me a coffee</string>
+  <string name="donate_summary">Support us with your donations ^_^</string>
+  <string name="donate_thank">We will appreciate any amount of your donations</string>
+  <string name="summary_about">Package Name : %1s\nVersion Name : %2s\nVersion Code : %3s</string>
+  <string name="credits">CREDITS</string>
+  <string name="created_by">Created by KuatoDev-Projects</string>
+  <string name="ida_bag">• Ida Bagus Rama Mahendra</string>
+  <string name="mobxprjkt">• mobxprjkt a.k.a c3eru@github</string>
+  <string name="nabil_aba">• Nabil ABA</string>
+  <string name="otang45">• Otang45</string>
+  <string name="stackoverflow">• StackOverflow community for code reference</string>
+  <string name="greenforce">• GreenForce™ Kernel developers and contributors</string>
 </resources>

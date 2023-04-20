@@ -1,53 +1,55 @@
 <resources>
-  <string name="app_name">My Disk Health</string>
-  <string name="app_subtitle">Versi v%s</string>
-  <string name="error_title">Terjadi kesalahan.\nMaaf atas ketidaknyamananya.</string>
-  <string name="unavailable">Tidak Diketahui</string>
-  <string name="error">Kesalahan</string>
-  <string name="storage_type">Tipe Penyimpanan : %s</string>
-  <string name="hexadecimal">Nilai Heksadesimal : %s</string>
-  <string name="node">Node kernel : %s</string>
-  <string name="write_speed">I/O Pengujian Kecepatan : %s</string>
-  <string name="health_title">Estimasi Kesehatan Penyimpanan</string>
+  <string name="app_name">Wear Level Insight</string>
+  <string name="error_title">Terjadi kesalahan yang tidak terduga. \n Kami mohon maaf atas ketidaknyamanannya.</string>
+  <string name="unavailable">Tidak tersedia</string>
   <string name="internal">Penyimpanan Internal</string>
-  <string name="total_storage">Kapasitas Total : %s</string>
-  <string name="free_storage">Kapasitas Kosong : %s</string>
-  <string name="used_storage">Kapasitas Terisi : %s</string>
+  <string name="total_storage">Total: %s</string>
+  <string name="free_storage">Kosong: %s</string>
+  <string name="used_storage">Digunakan: %s</string>
   <string name="percent">%</string>
-  <string name="gigs">\ GB</string>
-  <string name="youtube">YouTube</string>
-  <string name="paypal">Donasi</string>
-  <string name="sdcard">Penyimpanan Eksternal : %s</string>
-  <string name="telegram">Pembaruan</string>
+  <string name="sdcard_name">Terpasang: %s</string>
   <string name="instagram">Instagram</string>
-  <string name="disclaimer_title">Disclaimer</string>
-  <string name="disclaimer">Penyimpanan Anda memiliki masa pakai yang ditentukan oleh pabrikan. Aplikasi ini digunakan untuk memeriksa masa pakai penyimpanan Anda. semua data yang ditampilkan di aplikasi ini didasarkan pada data dump dari ponsel Anda. jika ada ketidakakuratan data yang ditampilkan, coba ganti kernel di ponsel Anda.</string>
-  <string name="agreements">Kami tidak bertanggung jawab atas perangkat rusak, partisi pemulihan hilang, kartu microSD mati, kucing atau anjing mati, perang nuklir, atau Anda dipecat karena aplikasi ini.\n\n%s\n\nApakah Anda setuju dengan syarat dan ketentuan ?</string>
-  <string name="author">Vern Kuato @2023</string>
-  <string name="agree">Setuju</string>
-  <string name="not_agree">Tolak</string>
-  <string name="need_root_message">Diperlukan akses root, harap root perangkat Anda untuk menggunakan aplikasi ini</string>
-  <string name="restart">Muat ulang aplikasi</string>
-  <string name="detail">Perika detail</string>
-  <string name="crash_desc">crash logo</string>
-  <string name="dialog_logo_desc">dialog logo logo</string>
-  <string name="exit_message">Apakah ingin keluar dari aplikasi..?</string>
-  <string name="exit">Keluar</string>
-  <string name="no">Tidak</string>
-  <string name="yes">Ya</string>
-  <string name="get_msg">mendapatkan pesan, harap tunggu sebentar...</string>
-  <string name="mod_msg">Perubahan terdeteksi, Gunakan My Disk Health asli</string>
-  <string-array name="msg_array">
-    <item>Tahukah kamu bahwa menghindari penyimpanan penuh dapat mencegah penurunan kesehatan disk?</item>
-    <item>Tahukah kamu bahwa menyimpan file besar di penyimpanan internal dapat menurunkan kesehatan disk?</item>
-    <item>Tahukah kamu bahwa menghapus file besar dapat menyebabkan penurunan kesehatan disk?</item>
-    <item>@string/disclaimer</item>
-    <item>Tahukah kamu bahwa menghindari penghapusan file besar dapat mencegah penurunan kesehatan disk?</item>
-  </string-array>
-  <string name="ufs_hint">UFS (Universal Flash Storage) Lifetime A dan UFS Lifetime B adalah dua parameter yang digunakan untuk mengukur umur pakai atau masa hidup dari media penyimpanan flash pada perangkat yang menggunakan teknologi UFS, seperti smartphone dan tablet. UFS Lifetime A mengacu pada jumlah data yang dapat ditulis ke media penyimpanan sebelum terjadi kegagalan atau kerusakan permanen. Parameter ini dapat dianggap sebagai ukuran berapa kali media penyimpanan flash dapat ditimpa atau ditulis ulang sebelum terjadi kerusakan yang tidak dapat diperbaiki. Sementara itu, UFS Lifetime B mengacu pada jumlah waktu atau durasi penggunaan media penyimpanan sebelum terjadi kegagalan atau kerusakan permanen. Parameter ini dapat dianggap sebagai ukuran berapa lama media penyimpanan flash dapat bertahan sebelum terjadi kerusakan yang tidak dapat diperbaiki. Kedua parameter ini adalah ukuran penting untuk perangkat yang menggunakan teknologi UFS karena mereka menentukan berapa lama media penyimpanan flash dapat bertahan sebelum perlu diganti atau diperbaiki. Semakin tinggi nilai UFS Lifetime A dan UFS Lifetime B, semakin baik kualitas media penyimpanan flash tersebut.</string>
-  <string name="emmc_hint">eMMC (embedded MultiMediaCard) adalah jenis penyimpanan non-volatile yang umum digunakan pada smartphone, tablet, dan perangkat portabel lainnya. Penyimpanan eMMC dapat menggunakan berbagai jenis memori flash NAND, termasuk SLC (single-level cell), MLC (multi-level cell), dan TLC (triple-level cell).\n\nMLC (multi-level cell) adalah jenis memori flash NAND yang dapat menyimpan beberapa bit data dalam satu sel, biasanya dua atau lebih. Meski lebih murah diproduksi, MLC NAND flash memiliki daya tahan yang lebih rendah daripada SLC (single-level cell) NAND flash, yaitu hanya dapat ditulis dalam jumlah terbatas sebelum habis.\n\nPenyimpanan eMMC yang menggunakan MLC NAND flash biasanya memiliki dua jenis penilaian masa pakai: masa pakai A dan masa pakai B. Masa pakai A adalah daya tahan minimum yang dijamin oleh perangkat eMMC, sedangkan masa pakai B adalah daya tahan yang diharapkan dapat dicapai dalam kondisi operasi normal.\n\nDaya tahan perangkat eMMC dipengaruhi oleh berbagai faktor, seperti jenis memori flash NAND yang digunakan, kontroler dan firmware yang digunakan pada perangkat, serta pola penggunaannya. Namun, perlu diingat bahwa penilaian masa pakai yang diberikan oleh produsen hanyalah perkiraan dan daya tahan sebenarnya dapat berbeda-beda tergantung pada kasus penggunaan yang spesifik.</string>
-  <string name="io_title">Pengujian Kecepatan I/O</string>
-  <string name="wearlevel">Estimasi level penggunaan</string>
-  <string name="lifecycle">Estimasi kesehatan lifecycle</string>
-  <string name="run_bench">Jalankan pengujian -></string>
+  <string name="disclaimer">Penyimpanan di perangkat Anda memiliki masa pakai yang ditentukan oleh produsen. Aplikasi ini dirancang untuk memeriksa umur penyimpanan Anda. Semua data yang ditampilkan di aplikasi ini berdasarkan pengambilan data dari perangkat Anda. Jika ada ketidakakuratan dalam data yang ditampilkan, Anda dapat mencoba mengubah kernel pada perangkat Anda.</string>
+  <string name="agreements">Harap dicatat bahwa kami tidak bertanggung jawab atas kerusakan atau konsekuensi negatif lain yang mungkin timbul dari penggunaan aplikasi ini. Ini termasuk, namun tidak terbatas pada, perangkat rusak, partisi pemulihan yang hilang, kartu microSD yang mati, hewan peliharaan yang meninggal, perang nuklir, atau kehilangan pekerjaan. \n\nPenting untuk memahami bahwa aplikasi ini hanya ditujukan untuk tujuan informasi saja dan tidak dimaksudkan sebagai solusi komprehensif untuk memantau atau mengelola umur penyimpanan perangkat Anda. Meskipun data yang disajikan di aplikasi ini didasarkan pada pengambilan data dari perangkat Anda, mungkin ada ketidakakuratan atau masalah lain yang dapat memengaruhi akurasi hasil. \n\nJika Anda mengalami masalah atau masalah dengan aplikasi, kami sarankan agar Anda mencari bantuan dari profesional atau ahli terkait. \n\n%s\n\nSelain itu, jika Anda memiliki kekhawatiran atau pertanyaan tentang syarat dan ketentuan penggunaan, harap tinjau dengan seksama sebelum menyetujuinya.\n\nHarap luangkan waktu untuk meninjau syarat dan ketentuan dengan seksama sebelum menggunakan aplikasi. Dengan mengklik \'Setuju\', Anda mengakui bahwa Anda telah membaca dan memahami syarat dan ketentuan serta menyetujuinya.</string>
+  <string name="agree">Saya Setuju</string>
+  <string name="not_agree">Saya Tidak Setuju</string>
+  <string name="need_root_message">Akses root diperlukan. Silakan root perangkat anda untuk menggunakan aplikasi ini.</string>
+  <string name="restart">Mulai Ulang Aplikasi</string>
+  <string name="detail">Detail</string>
+  <string name="crash_desc">Logo Crash</string>
+<string name="dialog_logo_desc">Logo Dialog</string>
+<string name="exit_message">Apakah Anda ingin keluar dari aplikasi?</string>
+<string name="exit">Keluar</string>
+<string name="no">Tidak</string>
+<string name="yes">Ya</string>
+<string name="click_info">Klik disini untuk informasi lebih lanjut...</string>
+<string name="get_msg">Silakan tunggu sebentar...</string>
+<string name="mod_msg">Modifikasi terdeteksi. \nHarap gunakan Wear Level Insight asli</string>
+<string-array name="msg_array">
+<item>Tahukah Anda bahwa menjaga cukup ruang penyimpanan kosong dapat membantu mencegah penurunan kesehatan disk?</item>
+<item>Tahukah Anda bahwa menyimpan file besar pada penyimpanan internal perangkat Anda dapat menyebabkan penurunan kesehatan disk?</item>
+<item>Tahukah Anda bahwa menghapus file besar dapat berdampak negatif pada kesehatan disk?</item>
+<item>Tahukah Anda bahwa secara teratur menghapus file besar dapat membantu mencegah penurunan kesehatan disk?</item>
+</string-array>
+<string name="ufs_hint">UFS (Universal Flash Storage) Lifetime A dan UFS Lifetime B adalah dua parameter yang digunakan untuk mengukur umur atau umur media penyimpanan flash pada perangkat yang menggunakan teknologi UFS, seperti smartphone dan tablet. \n\nUFS Lifetime A mengacu pada jumlah data yang dapat ditulis ke media penyimpanan sebelum terjadi kerusakan permanen atau rusak. Parameter ini dapat dianggap sebagai ukuran berapa kali media penyimpanan flash dapat ditulis ulang sebelum kerusakan permanen terjadi. \n\nSementara itu, UFS Lifetime B mengacu pada jumlah waktu atau durasi penggunaan media penyimpanan sebelum terjadi kerusakan permanen atau rusak. Parameter ini dapat dianggap sebagai ukuran berapa lama media penyimpanan flash dapat bertahan sebelum kerusakan permanen terjadi. \n\nKedua parameter ini adalah ukuran penting untuk perangkat yang menggunakan teknologi UFS karena menentukan berapa lama media penyimpanan flash dapat bertahan sebelum perlu diganti atau diperbaiki. Semakin tinggi nilai UFS Lifetime A dan UFS Lifetime B, semakin baik kualitas media penyimpanan flash.</string>
+<string name="ufs_hint_short">UFS Lifetime A dan B adalah parameter kunci untuk mengukur masa pakai penyimpanan flash pada perangkat UFS. Lifetime A mengukur batas data sebelum kerusakan, dan Lifetime B mengukur durasi penggunaan sebelum kerusakan. Nilai yang lebih tinggi berarti kualitas yang lebih baik dan menentukan kapan masa pakai penyimpanan berakhir.</string>
+<string name="emmc_hint">eMMC (embedded MultiMediaCard) adalah jenis penyimpanan non-volatile yang umum digunakan pada smartphone, tablet, dan perangkat portabel lainnya. Penyimpanan eMMC dapat menggunakan berbagai jenis memori flash NAND, termasuk SLC (single-level cell), MLC (multi-level cell), dan TLC (triple-level cell).\n\nMLC (multi-level cell) adalah jenis memori flash NAND yang menyimpan beberapa bit data per sel, biasanya dua atau lebih. MLC NAND flash lebih murah untuk diproduksi dibandingkan dengan SLC (single-level cell) NAND flash, yang hanya menyimpan satu bit per sel. Namun, MLC NAND flash memiliki daya tahan yang lebih rendah daripada SLC NAND flash, yang berarti hanya dapat ditulis sejumlah terbatas sebelum aus.\n\nPenyimpanan eMMC yang menggunakan MLC NAND flash biasanya memiliki dua jenis peringkat umur: umur A dan umur B. \n\nUmur A adalah daya tahan minimum yang dijamin dari perangkat eMMC, sedangkan umur B adalah daya tahan yang diharapkan perangkat dapat mencapai dalam kondisi operasi normal.\n\nDaya tahan perangkat eMMC tergantung pada banyak faktor, termasuk jenis memori flash NAND yang digunakan, pengontrol dan firmware yang digunakan dalam perangkat, dan pola penggunaan perangkat. Penting untuk dicatat bahwa peringkat umur yang diberikan oleh produsen hanya perkiraan, dan daya tahan sebenarnya dapat bervariasi tergantung pada kasus penggunaan tertentu.</string>
+<string name="emmc_hint_short">eMMC adalah penyimpanan non-volatile pada perangkat portabel yang dapat menggunakan berbagai jenis memori flash NAND: SLC, MLC, dan TLC. MLC lebih murah daripada SLC, tetapi memiliki daya tahan yang lebih rendah. eMMC dengan MLC memiliki dua peringkat umur: umur A dan umur B. Daya tahan sebenarnya tergantung pada banyak faktor, sehingga perkiraan produsen dapat bervariasi.</string>
+<string name="io_title">Penguji Kevepatan I/O</string>
+<string name="wearlevel">Perkiraan umur pemakaian</string>
+<string name="lifecycle">Perkiraan siklus pemakaian</string>
+<string name="run_bench">Jalankan I/O Bench -></string>
+<string name="storage_info">Informasi Penyimpanan</string>
+<string name="download">UNDUH DI SINI</string>
+<string name="device">Model Perangkat : %s</string>
+<string name="processor">Prosesor : %s</string>
+<string name="memory">Varian Memori : %s</string>
+<string name="storage_variant">Varian Penyimpanan : %s</string>
+<string name="graphic">Grafis : %s</string>
+<string name="powerprofile">Profil Daya : %s mA/jam</string>
+<string name="batterycapacity">Kapasitas Baterai : %s mA/jam</string>
+<string name="donate">Belikan saya secangkir kopi</string>
+<string name="donate_summary">Dukung kami dengan donasi ^_^</string>
+<string name="donate_thank">Kami menghargai setiap jumlah donasi Anda</string>
+<string name="summary_about">Nama Paket: %1s\nNama Versi: %2s\nKode Versi: %3s</string>
 </resources>
