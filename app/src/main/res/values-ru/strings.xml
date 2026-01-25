@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="download">Download</string>
-    <string name="credits">Credits</string>
+    <string name="download">Скачать</string>
+    <string name="credits">Благодарности</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
     <string name="free">Свободно</string>
