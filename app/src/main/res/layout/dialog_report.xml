@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    app:cardMaxElevation="2dp"
+    android:layout_marginVertical="@dimen/parentMargin"
+    android:adjustViewBounds="true"
+    android:clickable="true"
+    android:stateListAnimator="@anim/state_list_anim"
+    app:cardBackgroundColor="@color/translucent"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    style="@style/Widget.Material3.CardView.Filled"
+    app:cardCornerRadius="@dimen/cardCornerRadius">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textColor="?attr/colorPrimary"
+            android:textAppearance="@style/TextAppearanceTitle"
+            android:text="@string/wear_level_history"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:requiresFadingEdge="vertical"
+            android:fadingEdgeLength="96dp"
+            android:fadeScrollbars="false"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="@style/TextAppearanceTitle"
+                    android:textColor="?attr/colorPrimary"
+                    android:id="@+id/tv_title_a"
+                    android:text="@string/wear_level"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/table_history_a"
+                    android:stretchColumns="0">
+
+                </TableLayout>
+
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:background="?android:attr/listDivider"
+                    android:id="@+id/divider_ab" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:id="@+id/tv_title_b"
+                    android:textAppearance="@style/TextAppearanceTitle"
+                    android:text="@string/cycle_usages"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/table_history_b"
+                    android:stretchColumns="0">
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_marginTop="16dp"
+            android:id="@+id/btnClose"
+            android:layout_gravity="end"
+            android:text="@string/close" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

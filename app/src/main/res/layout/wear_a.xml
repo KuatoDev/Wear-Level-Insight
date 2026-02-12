@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:animateLayoutChanges="true"
+     android:gravity="center"
+     android:padding="4dp"
+     android:orientation="vertical"
+     android:layout_weight="1"
+     android:id="@+id/rl_a">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:animateLayoutChanges="true"
+         android:gravity="center"
+         android:orientation="horizontal">
+
+        <FrameLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:animateLayoutChanges="true"
+             android:layout_margin="4dp"
+             android:id="@+id/fl_1a">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:indeterminate="false"
+                 app:indicatorSize="70dp"
+                 android:padding="@dimen/parentMargin"
+                 app:trackColor="@color/colorPrimaryInverse"
+                 app:trackCornerRadius="@dimen/cardCornerRadius"
+                 style="@style/Widget.MaterialComponents.CircularProgressIndicator.Medium"
+                 app:indicatorInset="4dp"
+                 app:trackThickness="8dp"
+                 android:id="@+id/wear_level_progress_1a"
+                 android:layout_gravity="center"
+                 app:indicatorColor="?attr/colorPrimary" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:orientation="vertical"
+                 android:layout_gravity="center">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textAppearance="@style/TextAppearanceBody"
+                     android:textSize="12sp"
+                     tools:text="0x01"
+                     android:id="@+id/tv_hex_1_a"
+                     android:textStyle="bold" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textAppearance="@style/TextAppearanceBody"
+                     android:textSize="10sp"
+                     tools:text="10%"
+                     android:id="@+id/tv_wear_level_percent_1a" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:animateLayoutChanges="true"
+             android:layout_margin="4dp"
+             android:id="@+id/fl_2a">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:indeterminate="false"
+                 android:padding="@dimen/parentMargin"
+                 app:indicatorSize="70dp"
+                 
+                 app:trackColor="@color/colorPrimaryInverse"
+                 app:trackCornerRadius="@dimen/cardCornerRadius"
+                 style="@style/Widget.MaterialComponents.CircularProgressIndicator.Medium"
+                 app:indicatorInset="4dp"
+                 app:trackThickness="8dp"
+                 android:id="@+id/wear_level_progress_2a"
+                 android:layout_gravity="center"
+                 app:indicatorColor="?attr/colorPrimary" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:orientation="vertical"
+                 android:layout_gravity="center">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textAppearance="@style/TextAppearanceBody"
+                     android:textSize="12sp"
+                     tools:text="0x0B"
+                     android:id="@+id/tv_hex_2_a"
+                     android:textStyle="bold" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textAppearance="@style/TextAppearanceBody"
+                     android:textSize="10sp"
+                     tools:text="Life"
+                     android:id="@+id/tv_wear_level_percent_2a" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:layout_marginTop="8dp">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:visibility="gone"
+             android:textAppearance="@style/TextAppearanceBody"
+             android:ellipsize="marquee"
+             android:marqueeRepeatLimit="marquee_forever"
+             android:textSize="11sp"
+             android:singleLine="true"
+             tools:text="/dev/sda"
+             android:scrollHorizontally="true"
+             android:focusable="true"
+             android:id="@+id/tv_node_a" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="@style/TextAppearanceBody"
+             android:ellipsize="marquee"
+             android:focusableInTouchMode="true"
+             android:marqueeRepeatLimit="marquee_forever"
+             android:singleLine="true"
+             tools:text="Pre-EOL"
+             android:scrollHorizontally="true"
+             android:focusable="true"
+             android:id="@+id/tv_wear_level_title_a"
+             android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

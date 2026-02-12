@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:gravity="center"
+     android:background="?attr/colorSurfaceVariant"
+     android:padding="24dp"
+     android:orientation="vertical">
+
+    <ImageView
+         android:layout_height="80dp"
+         android:layout_width="80dp"
+         android:layout_marginBottom="16dp"
+         android:src="@drawable/ic_shieldbug"
+         app:tint="@color/mtrl_error" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="8dp"
+         android:textAppearance="@style/TextAppearanceTitle"
+         android:text="Oops! Something went wrong"
+         android:textStyle="bold" />
+
+    <ScrollView
+         android:layout_height="0dp"
+         android:layout_width="match_parent"
+         android:background="@drawable/rounded_background"
+         android:padding="12dp"
+         android:layout_margin="8dp"
+         android:backgroundTint="?attr/colorSurface"
+         android:layout_weight="1">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:fontFamily="monospace"
+             android:textSize="12sp"
+             android:textColor="?android:textColorPrimary"
+             android:textIsSelectable="true"
+             android:id="@+id/tv_error_log"
+             android:text="Error details..." />
+
+    </ScrollView>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="32dp"
+         android:layout_margin="16dp"
+         android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_marginEnd="4dp"
+             style="@style/Widget.Material3.Button.OutlinedButton"
+             android:layout_weight="1"
+             android:id="@+id/btnClose"
+             android:text="@string/close" />
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_marginHorizontal="4dp"
+             style="@style/Widget.Material3.Button.OutlinedButton"
+             android:layout_weight="1"
+             android:id="@+id/btnCopy"
+             android:text="Copy" />
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_marginStart="4dp"
+             android:layout_weight="1"
+             android:id="@+id/btnReport"
+             android:text="Report" />
+
+    </LinearLayout>
+
+</LinearLayout>

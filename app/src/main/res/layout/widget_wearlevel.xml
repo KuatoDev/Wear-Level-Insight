@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:gravity="center"
+     android:background="@drawable/rounded_background"
+     android:padding="4dp"
+     android:orientation="vertical"
+     android:id="@+id/cv_wear_level">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:textAppearance="@style/TextAppearanceTitle"
+         android:ellipsize="marquee"
+         android:marqueeRepeatLimit="marquee_forever"
+         android:singleLine="true"
+         android:textColor="@color/colorPrimary"
+         android:id="@+id/tv_disk_type"
+         android:text="Storage Health" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:orientation="horizontal">
+
+        <include
+             layout="@layout/widget_wear_a"
+             android:id="@+id/wear_a" />
+
+        <include
+             layout="@layout/widget_wear_b"
+             android:id="@+id/wear_b" />
+
+    </LinearLayout>
+
+</LinearLayout>

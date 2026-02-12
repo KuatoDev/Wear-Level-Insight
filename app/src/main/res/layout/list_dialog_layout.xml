@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardMaxElevation="2dp"
+    android:layout_marginVertical="@dimen/parentMargin"
+    android:adjustViewBounds="true"
+    android:clickable="true"
+    android:stateListAnimator="@anim/state_list_anim"
+    app:cardBackgroundColor="@color/translucent"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    style="@style/Widget.Material3.CardView.Filled"
+    app:cardCornerRadius="@dimen/cardCornerRadius">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearanceTitle"
+            android:paddingVertical="12dp"
+            android:textColor="?attr/colorPrimary"
+            android:paddingHorizontal="16dp"
+            android:id="@+id/dialogTitle"
+            android:text="Dialog Title"
+            android:textStyle="bold" />
+
+        <ListView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:divider="@null"
+            android:fadeScrollbars="false"
+            android:requiresFadingEdge="vertical"
+            android:fadingEdgeLength="96dp"
+            android:textAppearance="@style/TextAppearanceBody"
+            android:minHeight="100dp"
+            android:paddingVertical="8dp"
+            android:nestedScrollingEnabled="true"
+            android:layout_weight="1"
+            android:id="@+id/listView"
+            android:dividerHeight="0dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingTop="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_height="42dp"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="4dp"
+                android:textColor="@color/red"
+                android:background="@color/transparent"
+                android:textAppearance="@style/TextAppearanceTitle"
+                app:cornerRadius="12dp"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:id="@+id/negativeButton"
+                android:text="@string/close"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_height="42dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/blue"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:textAppearance="@style/TextAppearanceTitle"
+                app:cornerRadius="12dp"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:maxLines="1"
+                android:id="@+id/positiveButton"
+                android:text="@string/yes"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

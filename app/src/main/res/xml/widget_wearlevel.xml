@@ -1,0 +1,10 @@
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_wearlevel"
+    android:minHeight="30dp"
+    android:minWidth="120dp"
+    android:previewImage="@drawable/widget_wearlevel"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen" />
+    

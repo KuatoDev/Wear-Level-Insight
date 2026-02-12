@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     app:cardMaxElevation="2dp"
+     android:clickable="true"
+     android:elevation="@dimen/cardElevation"
+     android:padding="@dimen/parentMargin"
+     android:stateListAnimator="@anim/state_list_anim"
+     app:cardBackgroundColor="?attr/colorSurface"
+     android:focusable="true"
+     android:foreground="?android:attr/selectableItemBackground"
+     android:layout_marginBottom="@dimen/parentMargin"
+     android:layout_marginHorizontal="@dimen/parentMargin"
+     style="@style/Widget.Material3.CardView.Filled"
+     app:cardCornerRadius="@dimen/cardCornerRadius">
+
+    <RelativeLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginHorizontal="@dimen/parentMargin"
+         android:padding="@dimen/parentMargin">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="24dp"
+             android:drawablePadding="4dp"
+             android:textAppearance="@style/TextAppearanceTitle"
+             android:drawableStart="@drawable/ic_restore"
+             android:layout_alignParentTop="true"
+             android:id="@+id/tv_backup_title"
+             android:text="@string/backup_restore" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_below="@id/tv_backup_title"
+             android:gravity="center_vertical"
+             android:orientation="horizontal"
+             android:id="@+id/content_container">
+
+            <ListView
+                 android:layout_height="100dp"
+                 android:layout_width="0dp"
+                 android:scrollbars="none"
+                 android:divider="@null"
+                 android:fadingEdge="none"
+                 android:nestedScrollingEnabled="false"
+                 android:layout_weight="1"
+                 android:id="@+id/lv_partition_backup"
+                 android:dividerHeight="2dp">
+
+            </ListView>
+
+            <TextView
+                 android:layout_height="100dp"
+                 android:layout_width="0dp"
+                 android:visibility="gone"
+                 android:gravity="left|center_vertical"
+                 android:alpha="0.5"
+                 android:textSize="10sp"
+                 android:layout_marginLeft="48dp"
+                 android:textColor="?android:textColorSecondary"
+                 android:layout_weight="1"
+                 android:id="@+id/tv_empty_backup"
+                 android:text="@string/no_backup_found"
+                 android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="42dp"
+             android:layout_width="wrap_content"
+             android:layout_below="@id/content_container"
+             android:textSize="13sp"
+             style="@style/Widget.Material3.Button.TonalButton"
+             android:layout_alignParentRight="true"
+             android:text="@string/open"
+             android:textStyle="bold"
+             app:iconGravity="end"
+             android:id="@+id/btnBackupRestore" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:textColor="?attr/colorPrimary"
+             android:layout_alignBottom="@id/btnBackupRestore"
+             android:layout_below="@id/content_container"
+             android:gravity="center_vertical"
+             android:textAppearance="@style/TextAppearanceBody"
+             android:lines="1"
+             android:backgroundTint="?attr/colorSurfaceVariant"
+             android:layout_alignTop="@id/btnBackupRestore"
+             android:id="@+id/tv_backup_summary"
+             android:text="Last Backup: -"
+             android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

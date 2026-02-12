@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorSurface">#1E1E1E</color>
+    <color name="colorTertiary">#4FC3F7</color>
+    <color name="colorOnTertiary">#01579B</color>
+    <color name="colorTertiaryContainer">#039BE5</color>
+    <color name="colorOnTertiaryContainer">#81D4FA</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="yellow">#FFC107</color>
+    <color name="translucent">#EB292929</color>
+    <color name="semibackground">#FFEDEDED</color>
+    <color name="green">#4CAF50</color>
+    <color name="orange">#FF9800</color>
+    <color name="red">#FF5252</color>
+    <color name="blue">#4FC3F7</color>
+    <color name="windows_blue">#2196F3</color>
+    <color name="widgetColorContainer">@color/colorSurface</color>
+    </resources>

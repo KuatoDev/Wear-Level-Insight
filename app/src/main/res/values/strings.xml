@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <string name="download">Download</string>
     <string name="app_name">Wear Level Insight</string>
     <string name="version_format">Package Name: %1$s\nVersion Number: %2$s</string>
     <string name="tagline">Maintain your storage health</string>
     <string name="credits">Credits</string>
-    <string name="credits_text">Vern Kuato - KuatoDev-Project ©2026</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="free">free</string>
@@ -51,7 +50,6 @@
     <string name="website">Website</string>
     <string name="error">Error</string>
     <string name="backup_restore">Backup &amp; Restore Partitions</string>
-    <string name="unselect_all">Unselect All</string>
     <string name="select_all">Select All</string>
     <string name="select_at_least_one_partition">Select at least one partition!</string>
     <string name="backup_partition">Backup Partition</string>
@@ -111,5 +109,50 @@
     <string name="later">Later</string>
     <string name="new_version_available">New Version Available</string>
     <string name="a_new_version_is_available">A new version is available to download \n</string>
+    <string name="partitions_to_backup">partitions to Backup?</string>
+    <string name="last_backup">Last Backup</string>
+    <string name="storage_health">Storage Health</string>
+    <string name="emmc">eMMC</string>
+    <string name="ufs">UFS</string>
+    <string name="unknown">Unknown</string>
+    <string name="contributors">Contributors</string>
+    <string name="disclaimer_title">DISCLAIMER &amp; AGREEMENT</string>
+    <string name="disclaimer_content">
+        <b>1. ZERO TELEMETRY &amp; PRIVACY</b>
+        This application does not collect a single bit of telemetry data. All data generated or saved remains permanently offline on your device. We respect your complete privacy.
+        <b>2. DATA ACCURACY</b>
+        This application functions solely to visualize data that is otherwise hidden or obfuscated by your device manufacturer. We do not generate this data; we only read it. Consequently, if there are any inaccuracies in the readings (e.g., Health percentage, Cycle counts), the responsibility lies entirely with your device manufacturer\'s sensors and kernel reporting.
+        <b>3. LIMITATION OF LIABILITY</b>
+        By using this software, you acknowledge that you do so at your own risk. The provider (Vern Kuato / KuatoDev) shall
+        <b>NOT</b>
+        be held liable for any damage to your device, including but not limited to:
+        • Explosions or Battery fires
+        • Device bricking or Bootloops
+        • Data loss or Corruption
+        • Any hardware or software malfunctions
+        <b>4. UNOFFICIAL SOURCES WARNING</b>
+        We strongly advise against downloading this application from third-party sources. If you did not download this from the
+        <b>https://t.me/vernkuato</b>
+        or
+        <b>kuatodev.github.io/wearlevelinsight</b>
+        , you are running a potentially modified or malicious version. We accept absolutely no liability for issues arising from unofficial builds.
+        <b>5. AGREEMENT</b>
+        By clicking "Yes, I Agree", you confirm that you have read this disclaimer in its entirety, understand the risks, and accept full responsibility for any consequences resulting from the use of this tool.
+    </string>
+    <string name="agree">Yes, I Agree</string>
+    <string name="disagree">No, I don\'t</string>
+    <string name="scroll_to_accept">Please read all to the bottom to accept</string>
     
+    <string name="end_of_life">End Of Life</string>
+    <string name="please_read">Please READ</string>
+    <string name="read_it_untill_latest_paragrap">Read It untill latest paragraph and understand it</string>
+    <string name="saved_preferences">Saved Preferences</string>
+    <string name="preference">Preference</string>
+    <string name="dependencies">Dependencies</string>
+    <string name="library_1">Library</string>
+    <string name="reboot">Reboot</string>
+    <string name="are_you_sure_you_want_to_reboo">Are you sure you want to reboot?</string>
+    <string name="reboot_failed_root_required">Reboot failed. Root required</string>
+    <string name="date">Date</string>
+    <string name="value">Value</string>
 </resources>

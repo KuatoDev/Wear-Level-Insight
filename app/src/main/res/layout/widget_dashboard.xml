@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_background"
+    android:padding="8dp"
+    android:orientation="horizontal"
+    android:id="@+id/widget_root">
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitCenter"
+        android:paddingVertical="4dp"
+        android:layout_weight="2.5"
+        android:id="@+id/deviceimage" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_weight="7.5">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:layout_height="24dp"
+                android:layout_width="24dp"
+                android:src="@drawable/ic_refresh"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                app:tint="@color/colorPrimary"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/btn_refresh" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_toStartOf="@id/btn_refresh"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/TextAppearanceTitle"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/tvDevice"
+                android:text="Device Name"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="2dp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearanceBody"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/ic_cpu"
+            android:singleLine="true"
+            android:id="@+id/tvCPU"
+            android:text="CPU" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="2dp"
+            android:drawablePadding="4dp"
+            android:textAppearance="@style/TextAppearanceBody"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/ic_gpu"
+            android:singleLine="true"
+            android:id="@+id/tvGPU"
+            android:text="GPU" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="2dp"
+            android:textAppearance="@style/TextAppearanceBody"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/ic_memory"
+            android:singleLine="true"
+            android:id="@+id/tvTotalRam"
+            android:text="RAM" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="2dp"
+            android:drawablePadding="4dp"
+            android:textAppearance="@style/TextAppearanceBody"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/ic_storage"
+            android:singleLine="true"
+            android:id="@+id/tvTotalStorage"
+            android:text="Storage" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="2dp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearanceBody"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/ic_slot"
+            android:singleLine="true"
+            android:id="@+id/tvActiveSlot"
+            android:text="Slot" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="2dp"
+            android:drawablePadding="4dp"
+            android:textAppearance="@style/TextAppearanceBody"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/ic_battery"
+            android:singleLine="true"
+            android:id="@+id/tvBatteryCapacity"
+            android:text="Battery" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="2dp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearanceBody"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/ic_power"
+            android:singleLine="true"
+            android:id="@+id/tvKernelPowerProfile"
+            android:text="Profile" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="0dp"
+            android:drawablePadding="4dp"
+            android:textAppearance="@style/TextAppearanceBody"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/ic_cycle"
+            android:singleLine="true"
+            android:id="@+id/tvWearLevel"
+            android:text="Wear Level" />
+
+    </LinearLayout>
+
+</LinearLayout>

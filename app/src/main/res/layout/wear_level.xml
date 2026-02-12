@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:minHeight="180dp"
+    android:padding="@dimen/parentMargin"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:id="@+id/cv_wear_level">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="start"
+        android:textAppearance="@style/TextAppearanceTitle"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/ic_disk_health"
+        android:focusable="true"
+        android:id="@+id/tv_disk_type"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/wear_a"
+            android:id="@+id/wear_a" />
+
+        <include
+            layout="@layout/wear_b"
+            android:id="@+id/wear_b" />
+
+    </LinearLayout>
+
+</LinearLayout>

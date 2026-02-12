@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="?attr/colorSurfaceVariant"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbarlayout" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        app:singleSelection="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"
+        app:selectionRequired="true"
+        app:checkedButton="@id/btn_mode_backup"
+        android:id="@+id/toggle_group">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:backgroundTint="@color/selector_toggle_bg"
+            android:textColor="@color/selector_toggle_text"
+            android:id="@+id/btn_mode_backup"
+            android:text="@string/backup" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:backgroundTint="@color/selector_toggle_bg"
+            android:textColor="@color/selector_toggle_text"
+            android:id="@+id/btn_mode_restore"
+            android:text="@string/restore" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:id="@+id/layout_backup">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:elevation="@dimen/cardElevation"
+            android:stateListAnimator="@anim/state_list_anim"
+            app:cardBackgroundColor="?attr/colorSurface"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginHorizontal="@dimen/parentMargin"
+            style="@style/Widget.Material3.CardView.Filled"
+            app:cardCornerRadius="@dimen/cardCornerRadius">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingVertical="8dp"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearanceTitle"
+                    android:text="@string/select_partitions_to_backup" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_height="match_parent"
+                    android:requiresFadingEdge="vertical"
+                    android:fadingEdgeLength="96dp"
+                    android:layout_width="match_parent"
+                    tools:listitem="@layout/item_partition"
+                    android:id="@+id/rv_partitions" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            android:elevation="@dimen/cardElevation"
+            android:stateListAnimator="@anim/state_list_anim"
+            app:cardBackgroundColor="?attr/colorSurface"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginHorizontal="@dimen/parentMargin"
+            style="@style/Widget.Material3.CardView.Filled"
+            app:cardCornerRadius="@dimen/cardCornerRadius">
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/red"
+                    android:text="@string/show_all_partitions_available"
+                    android:id="@+id/switch_advanced_partitions" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/cb_select_all_backup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_all"
+                        android:layout_marginEnd="16dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/btn_start_backup"
+                        android:visibility="gone"
+                        android:text="@string/start_backup" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/layout_restore">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:elevation="@dimen/cardElevation"
+            android:stateListAnimator="@anim/state_list_anim"
+            app:cardBackgroundColor="?attr/colorSurface"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginHorizontal="@dimen/parentMargin"
+            style="@style/Widget.Material3.CardView.Filled"
+            app:cardCornerRadius="@dimen/cardCornerRadius">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingVertical="8dp"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearanceTitle"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:text="Select backup files (.img) to restore:" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:requiresFadingEdge="vertical"
+                    android:fadingEdgeLength="96dp"
+                    tools:listitem="@layout/item_partition"
+                    android:id="@+id/rv_backups" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            android:elevation="@dimen/cardElevation"
+            android:stateListAnimator="@anim/state_list_anim"
+            app:cardBackgroundColor="?attr/colorSurface"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginHorizontal="@dimen/parentMargin"
+            style="@style/Widget.Material3.CardView.Filled"
+            app:cardCornerRadius="@dimen/cardCornerRadius">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/cb_select_all_restore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_all"
+                    android:layout_marginEnd="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btn_delete_backup"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_delete"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:tint="?attr/colorError"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Delete Selected Backups" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:backgroundTint="?attr/colorError"
+                    android:textColor="?attr/colorOnError"
+                    android:id="@+id/btn_start_restore"
+                    android:visibility="gone"
+                    android:text="@string/start_restore" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</LinearLayout>

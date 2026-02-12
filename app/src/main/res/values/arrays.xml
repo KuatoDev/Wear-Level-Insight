@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme_modes">
+        <item>@string/current_follow_system</item>
+        <item>@string/current_light_theme</item>
+        <item>@string/current_dark_theme</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>@string/current_follow_system</item>
+        <item>@string/current_light_theme</item>
+        <item>@string/current_dark_theme</item>
+    </string-array>
+
+</resources>

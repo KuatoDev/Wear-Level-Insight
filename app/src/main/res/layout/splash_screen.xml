@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="?attr/colorSurfaceVariant"
+     android:inAnimation="@android:anim/slide_in_left"
+     android:outAnimation="@android:anim/slide_out_right"
+     android:id="@+id/viewFlipper">
+
+    <RelativeLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:padding="32dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                 android:layout_height="96dp"
+                 android:layout_width="96dp"
+                 android:layout_marginBottom="24dp"
+                 android:src="@drawable/ic_launcher_foreground"
+                 app:tint="?attr/colorPrimary" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:textSize="28sp"
+                 android:textColor="?android:textColorPrimary"
+                 android:text="@string/app_name"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:textSize="16sp"
+                 android:textColor="?android:textColorSecondary"
+                 android:layout_marginTop="8dp"
+                 android:text="@string/tagline" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="12dp"
+             app:cornerRadius="24dp"
+             android:layout_alignParentBottom="true"
+             android:id="@+id/btn_start"
+             android:text="@string/start" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:padding="32dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                 android:layout_height="72dp"
+                 android:layout_width="72dp"
+                 android:layout_marginBottom="24dp"
+                 android:src="@drawable/ic_cpu"
+                 app:tint="?attr/colorPrimary" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:textSize="24sp"
+                 android:textColor="?android:textColorPrimary"
+                 android:text="@string/request_root_access"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:textAlignment="center"
+                 android:textSize="14sp"
+                 android:textColor="?android:textColorSecondary"
+                 android:layout_marginTop="16dp"
+                 android:text="@string/this_application_requires_root" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="12dp"
+             app:cornerRadius="24dp"
+             android:layout_alignParentBottom="true"
+             android:id="@+id/btn_grant_root"
+             android:text="@string/grant_root_access" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:padding="32dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                 android:layout_height="72dp"
+                 android:layout_width="72dp"
+                 android:layout_marginBottom="24dp"
+                 android:src="@drawable/ic_folder"
+                 app:tint="?attr/colorPrimary" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:textSize="24sp"
+                 android:textColor="?android:textColorPrimary"
+                 android:text="@string/permission_request"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="16dp"
+                 android:gravity="center"
+                 android:textAlignment="center"
+                 android:textSize="14sp"
+                 android:textColor="?android:textColorSecondary"
+                 android:layout_marginTop="16dp"
+                 android:text="@string/we_need_the_following_permissi" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:background="?attr/colorSurfaceVariant"
+                 android:padding="16dp"
+                 android:orientation="vertical">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_marginBottom="8dp"
+                     android:text="@string/storage_all_files_access"
+                     android:textStyle="bold" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:text="@string/notifications"
+                     android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="12dp"
+             app:cornerRadius="24dp"
+             android:layout_alignParentBottom="true"
+             android:id="@+id/btn_grant_permission"
+             android:text="@string/grant_all_permission" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:padding="32dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                 android:layout_height="72dp"
+                 android:layout_width="72dp"
+                 android:layout_marginBottom="24dp"
+                 android:src="@drawable/ic_calendar"
+                 app:tint="?attr/colorPrimary" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:textSize="24sp"
+                 android:textColor="?android:textColorPrimary"
+                 android:text="@string/when_did_you_buy_this"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:textAlignment="center"
+                 android:textSize="14sp"
+                 android:textColor="?android:textColorSecondary"
+                 android:layout_marginTop="16dp"
+                 android:text="@string/to_calculate_your_daily_wear_l" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="12dp"
+             app:cornerRadius="24dp"
+             android:layout_alignParentBottom="true"
+             android:id="@+id/btn_select_date"
+             android:text="@string/select_purchase_date" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:gravity="end"
+                        android:textAlignment="gravity"
+                        android:textSize="48.0dip"
+                        android:fontFamily="@font/fastrace"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1.0"
+                        android:text="Kuato"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:gravity="start"
+                        android:textAlignment="gravity"
+                        android:textSize="48.0dip"
+                        android:fontFamily="@font/fastrace"
+                        android:textColor="@color/white"
+                        android:layout_weight="1.2"
+                        android:text="Dev"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:textSize="18.0dip"
+                    android:fontFamily="@font/fastrace"
+                    android:textColor="@color/orange"
+                    android:text="Projects 2026"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:fontFamily="@font/sanfranciscoprorounded"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginTop="8dp"
+            android:text="@string/tagline" />
+
+    </RelativeLayout>
+</ViewFlipper>

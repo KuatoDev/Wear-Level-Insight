@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style
+        name="Toolbar.TitleText"
+        parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#b6E8E8E8</item>
+        <item name="android:fontFamily">@font/sanfranciscoprorounded</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style
+        name="Toolbar.SubtitleText"
+        parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#b6E8E8E8</item>
+        <item name="android:fontFamily">@font/sanfranciscoprorounded</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style
+        name="TextAppearanceBody"
+        parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">11sp</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:textColor">#b6E8E8E8</item>
+        <item name="android:fontFamily">@font/sanfranciscoprorounded</item>
+    </style>
+
+    <style
+        name="TextAppearanceTitle"
+        parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/sanfranciscoprorounded</item>
+        <item name="android:textColor">#b6E8E8E8</item>
+    </style>
+
+</resources>

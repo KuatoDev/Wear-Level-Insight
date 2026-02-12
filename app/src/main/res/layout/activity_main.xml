@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="?attr/colorSurfaceVariant"
+    android:fitsSystemWindows="false"
+    android:id="@+id/coordinator"
+    tools:context=".activity.MainActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbarlayout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:paddingBottom="24dp"
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="96dp"
+        android:id="@+id/nested_scroll_view">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/dashboard"
+                android:id="@+id/dashboard" />
+
+            <include
+                layout="@layout/card_wearlevel_history"
+                android:id="@+id/wear_chart" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:cardMaxElevation="2dp"
+                android:clickable="true"
+                android:elevation="@dimen/cardElevation"
+                android:stateListAnimator="@anim/state_list_anim"
+                app:cardBackgroundColor="?attr/colorSurface"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginBottom="@dimen/parentMargin"
+                android:layout_marginHorizontal="@dimen/parentMargin"
+                style="@style/Widget.Material3.CardView.Filled"
+                app:cardCornerRadius="@dimen/cardCornerRadius">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/wear_level"
+                        android:id="@+id/wearlevel" />
+
+                    <include
+                        layout="@layout/storage_cart"
+                        android:id="@+id/storagecart" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <include
+                layout="@layout/card_io_benchmark"
+                android:id="@+id/card_io_benchmark" />
+
+            <include
+                layout="@layout/card_backup_restore"
+                android:id="@+id/cardbackuprestore" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <id.vern.wearlevelinsight.fragments.CreditsPreference
+        android:key="key_credits"
+        android:title="@string/credits" />
+
+    <PreferenceCategory
+        android:title="@string/appearances"
+        android:layout="@layout/preference_layout_header">
+        <Preference
+            android:icon="@drawable/ic_theme"
+            android:key="@string/key_theme"
+            android:layout="@layout/preference_layout_single_full"
+            android:title="@string/title_choose_theme" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_and_dependencies"
+        android:layout="@layout/preference_layout_header">
+        <Preference
+            android:icon="@drawable/ic_db"
+            android:key="@string/key_getprefs"
+            android:layout="@layout/preference_layout_top"
+            android:summary="@string/saved_pref_summary"
+            android:title="@string/saved_pref" />
+        <Preference
+            android:icon="@drawable/ic_bracket"
+            android:key="@string/key_dependency"
+            android:layout="@layout/preference_layout_bottom"
+            android:title="@string/library"
+            android:summary="@string/dependencies_and_library_used_" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/more"
+        android:layout="@layout/preference_layout_header">
+        <Preference
+            android:icon="@drawable/ic_web"
+            android:key="@string/key_website"
+            android:layout="@layout/preference_layout_top"
+            android:summary="@string/visit_my_website"
+            android:title="@string/website" />
+        <Preference
+            android:icon="@drawable/ic_telegram"
+            android:key="@string/key_telegram"
+            android:layout="@layout/preference_layout_bottom"
+            android:summary="@string/telegram_summary"
+            android:title="@string/title_telegram" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

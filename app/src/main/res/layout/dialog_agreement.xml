@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     app:cardElevation="8dp"
+     app:cardBackgroundColor="?attr/colorSurface"
+     app:cardCornerRadius="@dimen/cardCornerRadius">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:padding="24dp"
+         android:orientation="vertical">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:gravity="center"
+             android:textAppearance="@style/TextAppearanceTitle"
+             android:textColor="?attr/colorError"
+             android:id="@+id/dialogTitle"
+             android:text="@string/disclaimer_title"
+             android:textStyle="bold" />
+
+        <ScrollView
+             android:layout_height="0dp"
+             android:layout_width="match_parent"
+             android:scrollbars="vertical"
+             android:fillViewport="true"
+             android:fadeScrollbars="false"
+             android:layout_weight="1"
+             android:id="@+id/scrollView">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textAppearance="@style/TextAppearanceBody"
+                 android:lineSpacingExtra="4dp"
+                 android:id="@+id/dialogMessage"
+                 android:text="@string/disclaimer_content" />
+
+        </ScrollView>
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="8dp"
+             android:gravity="center"
+             android:textSize="10sp"
+             android:textColor="?android:textColorSecondary"
+             android:layout_marginTop="8dp"
+             android:id="@+id/tvScrollHint"
+             android:text="@string/scroll_to_accept" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="end"
+             android:orientation="horizontal"
+             android:layout_marginTop="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginEnd="8dp"
+                 style="@style/Widget.Material3.Button.TextButton"
+                 android:id="@+id/negativeButton"
+                 android:text="@string/disagree" />
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 style="@style/Widget.Material3.Button.TonalButton"
+                 android:enabled="false"
+                 android:id="@+id/positiveButton"
+                 android:text="@string/agree" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

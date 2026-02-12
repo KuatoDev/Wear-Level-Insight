@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:cardMaxElevation="2dp"
+    android:clickable="true"
+    android:elevation="@dimen/cardElevation"
+    android:padding="@dimen/parentMargin"
+    android:stateListAnimator="@anim/state_list_anim"
+    app:cardBackgroundColor="?attr/colorSurface"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="@dimen/parentMargin"
+    android:layout_marginHorizontal="@dimen/parentMargin"
+    style="@style/Widget.Material3.CardView.Filled"
+    app:cardCornerRadius="@dimen/cardCornerRadius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="@dimen/parentMargin">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textAppearance="@style/TextAppearanceTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_gauge"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tvBenchmarkTitle"
+            android:text="@string/io_benchmark" />
+
+        <id.vern.wearlevelinsight.views.GaugeView
+            android:layout_height="200dp"
+            android:layout_width="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvBenchmarkTitle"
+            android:id="@+id/progressBenchmarkGauge" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="@id/progressBenchmarkGauge"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@id/progressBenchmarkGauge"
+            android:baselineAligned="false"
+            app:layout_constraintEnd_toEndOf="@id/progressBenchmarkGauge"
+            app:layout_constraintBottom_toBottomOf="@id/progressBenchmarkGauge"
+            android:paddingHorizontal="12dp"
+            android:id="@+id/layoutCurrentStats">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="9sp"
+                        android:textAppearance="@style/TextAppearanceBody"
+                        android:textColor="?android:textColorSecondary"
+                        android:text="@string/write"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="9sp"
+                        android:textAppearance="@style/TextAppearanceBody"
+                        android:textColor="?attr/colorPrimary"
+                        android:id="@+id/tvWriteSpeed"
+                        android:text="-"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="9sp"
+                        android:textAppearance="@style/TextAppearanceBody"
+                        android:textColor="?android:textColorSecondary"
+                        android:text="@string/read"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="9sp"
+                        android:textColor="?attr/colorPrimary"
+                        android:textAppearance="@style/TextAppearanceBody"
+                        android:id="@+id/tvReadSpeed"
+                        android:text="-"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="9sp"
+                    android:textAppearance="@style/TextAppearanceBody"
+                    android:textColor="?android:textColorSecondary"
+                    android:text="@string/latency"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:textAppearance="@style/TextAppearanceBody"
+                    android:textColor="?attr/colorPrimary"
+                    android:id="@+id/tvLatency"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_height="42dp"
+            android:layout_width="wrap_content"
+            app:iconSize="18dp"
+            android:textSize="13sp"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/progressBenchmarkGauge"
+            app:icon="@drawable/ic_play"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="@id/progressBenchmarkGauge"
+            app:layout_constraintEnd_toEndOf="@id/progressBenchmarkGauge"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:id="@+id/btnRunBenchmark"
+            android:text="@string/run_now"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            android:baselineAligned="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progressBenchmarkGauge">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="9sp"
+                    android:textAppearance="@style/TextAppearanceBody"
+                    android:textColor="?android:textColorSecondary"
+                    android:text="@string/previous_write" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.8"
+                    android:textSize="11sp"
+                    android:textAppearance="@style/TextAppearanceBody"
+                    android:textColor="?android:textColorPrimary"
+                    android:id="@+id/tvPrevWriteSpeed"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="9sp"
+                    android:textAppearance="@style/TextAppearanceBody"
+                    android:textColor="?android:textColorSecondary"
+                    android:text="@string/previous_latency" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.8"
+                    android:textAppearance="@style/TextAppearanceBody"
+                    android:textSize="11sp"
+                    android:textColor="?android:textColorPrimary"
+                    android:id="@+id/tvPrevLatency"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearanceBody"
+                    android:textSize="9sp"
+                    android:textColor="?android:textColorSecondary"
+                    android:text="@string/previous_read" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.8"
+                    android:textAppearance="@style/TextAppearanceBody"
+                    android:textSize="11sp"
+                    android:textColor="?android:textColorPrimary"
+                    android:id="@+id/tvPrevReadSpeed"
+                    android:text="-" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

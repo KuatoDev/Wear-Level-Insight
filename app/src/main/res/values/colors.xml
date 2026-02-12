@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_theme_light_primary">#1976D2</color>
+    <color name="md_theme_light_secondary">#2196F3</color>
+    <color name="md_theme_light_tertiary">#64B5F6</color>
+    <color name="md_theme_light_surfaceVariant">#E3F2FD</color>
+
+    <color name="default_color">@color/md_theme_light_primary</color>
+    <color name="blue">#0288D1</color>
+    <color name="darkblue">#1565C0</color>
+    <color name="softblue">#E3F2FD</color>
+    <color name="green">#388E3C</color>
+    <color name="darkgreen">#1B5E20</color>
+    <color name="softgreen">#C8E6C9</color>
+    <color name="red">#D32F2F</color>
+    <color name="darkred">#B71C1C</color>
+    <color name="softred">#FFCDD2</color>
+    <color name="yellow">#FFCA28</color>
+    <color name="amber">#FFA000</color>
+    <color name="orange">#F57C00</color>
+
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorSecondary">#2196F3</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorTertiary">#90CAF9</color>
+    <color name="colorOnTertiary">#0D47A1</color>
+    <color name="colorTertiaryContainer">#BBDEFB</color>
+    <color name="colorOnTertiaryContainer">#1E88E5</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="translucent">#EBEDEDED</color>
+    <color name="semibackground">#FF1E1E1E</color>
+    <color name="windows_blue">#1E88E5</color>
+    <color name="widgetColorContainer">@color/semibackground</color>
+
+</resources>

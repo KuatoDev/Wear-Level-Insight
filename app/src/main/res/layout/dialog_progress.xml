@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:animateLayoutChanges="true"
+     app:cardMaxElevation="0dp"
+     android:layout_marginVertical="@dimen/parentMargin"
+     android:adjustViewBounds="true"
+     android:clickable="true"
+     android:stateListAnimator="@anim/state_list_anim"
+     app:cardBackgroundColor="@color/translucent"
+     android:focusable="true"
+     android:foreground="?android:attr/selectableItemBackground"
+     style="@style/Widget.Material3.CardView.Filled"
+     app:cardCornerRadius="@dimen/cardCornerRadius">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:padding="24dp"
+         android:orientation="vertical"
+         android:layout_gravity="center_vertical">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             android:layout_marginVertical="4dp"
+             android:gravity="center"
+             android:id="@+id/dialogTitle"
+             android:text="@string/download"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:textColor="?attr/colorPrimary"
+             android:textAppearance="@style/TextAppearanceTitle"
+             android:id="@+id/progressText" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_margin="8dp"
+             app:trackCornerRadius="12dp"
+             app:trackThickness="24dp"
+             android:id="@+id/progressBar" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

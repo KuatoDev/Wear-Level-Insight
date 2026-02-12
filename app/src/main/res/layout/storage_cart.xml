@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:gravity="center"
+     android:padding="@dimen/parentMargin"
+     android:orientation="vertical"
+     android:layout_weight="1"
+     android:id="@+id/cv_winpart">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:drawablePadding="4dp"
+         android:gravity="center"
+         android:textAppearance="@style/TextAppearanceTitle"
+         android:layout_centerHorizontal="true"
+         android:drawableStart="@drawable/ic_sd"
+         android:layout_alignParentTop="true"
+         android:id="@+id/tv_partition_title"
+         android:text="@string/internal_storage"
+         android:textStyle="bold" />
+
+    <id.vern.wearlevelinsight.views.PieDiagram
+         android:layout_height="70dp"
+         android:layout_width="70dp"
+         android:layout_centerInParent="true"
+         android:padding="@dimen/parentMargin"
+         android:layout_gravity="center"
+         android:id="@+id/pie_chart" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="horizontal"
+         android:layout_alignParentBottom="true">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:layout_weight="1">
+
+            <View
+                 android:layout_height="12dp"
+                 android:layout_width="12dp"
+                 android:background="@drawable/circle_indicator"
+                 android:backgroundTint="?attr/colorPrimary" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="10sp"
+                 android:text="@string/used"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="10sp"
+                 android:id="@+id/tv_used_size"
+                 android:text="@string/checking" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:layout_weight="1">
+
+            <View
+                 android:layout_height="12dp"
+                 android:layout_width="12dp"
+                 android:background="@drawable/circle_indicator"
+                 android:backgroundTint="?attr/colorSurfaceVariant" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="10sp"
+                 android:text="@string/free"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="10sp"
+                 android:id="@+id/tv_free_size"
+                 android:text="@string/checking" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

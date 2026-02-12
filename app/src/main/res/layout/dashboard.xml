@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:padding="@dimen/parentMargin">
+
+    <ImageView
+         android:layout_height="0dp"
+         android:layout_width="0dp"
+         android:animateLayoutChanges="true"
+         android:layout_marginEnd="8dp"
+         android:elevation="2dp"
+         android:stateListAnimator="@anim/state_list_anim"
+         app:layout_constraintEnd_toStartOf="@+id/cv_info"
+         app:layout_constraintBottom_toBottomOf="@+id/cv_info"
+         android:scaleType="fitCenter"
+         app:layout_constraintTop_toTopOf="@+id/cv_info"
+         app:layout_constraintHorizontal_weight="2.5"
+         app:layout_constraintStart_toStartOf="parent"
+         android:id="@+id/deviceimage" />
+
+    <com.google.android.material.card.MaterialCardView
+         android:layout_height="wrap_content"
+         android:layout_width="0dp"
+         android:animateLayoutChanges="true"
+         app:cardMaxElevation="2dp"
+         android:clickable="true"
+         android:stateListAnimator="@anim/state_list_anim"
+         app:layout_constraintStart_toEndOf="@+id/deviceimage"
+         app:cardBackgroundColor="?attr/colorSurface"
+         app:layout_constraintBottom_toBottomOf="parent"
+         android:focusable="true"
+         android:foreground="?android:attr/selectableItemBackground"
+         android:layout_marginBottom="4dp"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintHorizontal_weight="7.5"
+         app:layout_constraintEnd_toEndOf="parent"
+         style="@style/Widget.Material3.CardView.Filled"
+         app:cardCornerRadius="@dimen/cardCornerRadius"
+         android:id="@+id/cv_info">
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:paddingHorizontal="14dp">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginVertical="4dp"
+                 android:gravity="center"
+                 android:textColor="?attr/colorPrimary"
+                 android:textAlignment="center"
+                 android:fadingEdge="horizontal"
+                 android:textAppearance="@style/TextAppearanceTitle"
+                 android:ellipsize="marquee"
+                 android:singleLine="true"
+                 android:id="@+id/tvDevice"/>
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="2dp"
+                 android:drawablePadding="2dp"
+                 android:gravity="center_vertical"
+                 android:textAppearance="@style/TextAppearanceBody"
+                 android:drawableStart="@drawable/ic_cpu"
+                 android:id="@+id/tvCPU"/>
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="2dp"
+                 android:drawablePadding="2dp"
+                 android:gravity="center_vertical"
+                 android:textAppearance="@style/TextAppearanceBody"
+                 android:drawableStart="@drawable/ic_gpu"
+                 android:id="@+id/tvGPU"/>
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="2dp"
+                 android:drawablePadding="2dp"
+                 android:gravity="center_vertical"
+                 android:textAppearance="@style/TextAppearanceBody"
+                 android:drawableStart="@drawable/ic_memory"
+                 android:id="@+id/tvTotalRam"/>
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="2dp"
+                 android:drawablePadding="2dp"
+                 android:gravity="center_vertical"
+                 android:textAppearance="@style/TextAppearanceBody"
+                 android:drawableStart="@drawable/ic_storage"
+                 android:id="@+id/tvTotalStorage"/>
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="2dp"
+                 android:drawablePadding="2dp"
+                 android:gravity="center_vertical"
+                 android:textAppearance="@style/TextAppearanceBody"
+                 android:drawableStart="@drawable/ic_slot"
+                 android:id="@+id/tvActiveSlot"/>
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="2dp"
+                 android:drawablePadding="2dp"
+                 android:gravity="center_vertical"
+                 android:textAppearance="@style/TextAppearanceBody"
+                 android:drawableStart="@drawable/ic_battery"
+                 android:id="@+id/tvBatteryCapacity"/>
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="2dp"
+                 android:drawablePadding="2dp"
+                 android:gravity="center_vertical"
+                 android:textAppearance="@style/TextAppearanceBody"
+                 android:drawableStart="@drawable/ic_power"
+                 android:id="@+id/tvKernelPowerProfile"/>
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="16dp"
+                 android:drawablePadding="2dp"
+                 android:gravity="center_vertical"
+                 android:textAppearance="@style/TextAppearanceBody"
+                 android:drawableStart="@drawable/ic_cycle"
+                 android:id="@+id/tvWearLevel"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
