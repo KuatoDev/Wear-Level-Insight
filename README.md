@@ -21,8 +21,8 @@ Most Android devices will work, but in some cases, they may not.
 ## Translations
 - [x] Default Translation ```English```
 - [x] Ukrainian
-- [ ] Indonesian
-- [ ] Russian
+- [x] Indonesian
+- [x] Russian
 
 ```Submit a pull request to contribute to the translation or improve existing translations.```
 
