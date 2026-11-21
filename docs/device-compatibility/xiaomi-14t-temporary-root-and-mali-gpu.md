@@ -70,7 +70,7 @@ GLES: ARM, Mali-G615 MC6, OpenGL ES 3.2 v1.r44p1-01eac0...
 The local proof of concept extracts the renderer name:
 
 ```sh
-dumpsys SurfaceFlinger | grep '^GLES:' | sed -n 's/^GLES: [^,]*, \\([^,]*\\),.*/\\1/p'
+dumpsys SurfaceFlinger | grep '^GLES:' | sed -n 's/^GLES: [^,]*, \([^,]*\),.*/\1/p'
 ```
 
 This returns:
